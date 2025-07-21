@@ -102,9 +102,7 @@ export default function VideoRecorder() {
           </div>
         )}
       </div>
-      <p className="text-gray-500 mt-4 text-sm text-center">
-        Record your webcam + face overlay above. Save and load your last video using localStorage.
-      </p>
+     
     </div>
   );
 } 

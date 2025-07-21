@@ -15,9 +15,7 @@ export default function Page() {
         <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[#393053] mb-2" style={{ fontFamily: 'Inter, sans-serif' }}>
           Face Tracking + Video Recording
         </h1>
-        <p className="text-base md:text-lg text-[#393053] opacity-80 max-w-xl mx-auto">
-          A premium, clean, and modern face tracking and video recording experience.
-        </p>
+        
       </motion.header>
 
       <main className="w-full max-w-5xl flex flex-col gap-8 md:gap-12">
