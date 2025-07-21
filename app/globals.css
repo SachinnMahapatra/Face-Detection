@@ -1,26 +1,41 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: linear-gradient(135deg, #ECFAE5 0%, #DDF6D2 40%, #CAE8BD 75%, #B0DB9C 100%);
+  --foreground: #222;
+  --premium-font: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+  --card-bg: rgba(255,255,255,0.85);
+  --card-border: #CAE8BD;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--premium-font);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  letter-spacing: 0.01em;
+  transition: background 0.6s cubic-bezier(0.4,0,0.2,1);
 }
+
+.card-premium {
+  background: var(--card-bg);
+  border: 1.5px solid var(--card-border);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px 0 rgba(186, 220, 167, 0.10);
+}
+
+.section-gap {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: linear-gradient(135deg, #ECFAE5 0%, #DDF6D2 40%, #CAE8BD 75%, #B0DB9C 100%);
+    --foreground: #222;
+  }
+}
+
